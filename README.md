@@ -22,8 +22,16 @@ System Overview
 * A camera attribute control method adapted to image bracketing patterns. Images with various exposures are captured for scene exploration, and optimal exposure for the next control is globally optimized by Gaussian process regression (GPR).
 * A VO-oriented image acquisition scheme that explores a wide dynamic range and provides stable image sequences in the time domain. The system leverages the exploration of the dynamic range with system output frequency according to the bracketing pattern design.
 
-## Getting Start
-Our method requires a hardware camera that supports the image bracketing capture technique and its corresponding API interface.
-In our experiments, we use the [FLIR BFS cameras](https://www.flir.com/products/blackfly-s-usb3/?vertical=machine%20vision&segment=iis) (FLIR BFS-U3-32S4C) and the bracketing images are captured by the Sequencer implementation of [Spinnaker API](https://www.flir.com/products/spinnaker-sdk/?vertical=machine+vision&segment=iis).
+## Requirements
+### Hardware
+* Camera with Image Bracketing Interface. We use the [FLIR BFS cameras](https://www.flir.com/products/blackfly-s-usb3/?vertical=machine%20vision&segment=iis) (FLIR BFS-U3-32S4C) and the bracketing images are captured by the Sequencer implementation of [Spinnaker API](https://www.flir.com/products/spinnaker-sdk/?vertical=machine+vision&segment=iis).
 
+### Software
+* Ubuntu (20.04)
+* [ROS (Noetic Ninjemys)](https://wiki.ros.org/noetic/Installation/Ubuntu)
+* [Spinnaker (2.7.0.128)](https://www.flir.com/products/spinnaker-sdk/)
+* OpenCV (installed with ROS)
+* Eigen (installed with ROS)
+
+## Getting Start
 
