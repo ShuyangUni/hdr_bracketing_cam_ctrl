@@ -1,0 +1,37 @@
+---
+camera: 
+  -
+    ns: bfly
+    serial: 21137010
+    mode: hdr
+    alias: cam0
+    sub_ns: cam0
+    publish_all_images: false
+    expo_t_major_lower: 1000.0 
+    expo_t_major_upper: 20000.0
+    gain_major_lower: 0.0
+    gain_major_upper: 20.0
+    expo_val_offset: 200.0
+    hdr_expo_t_shift: 100.0
+    hdr_init_major_expo_t: 4000.0
+    hdr_init_major_gain: 0.0
+    hdr_init_low_expo_t: 1000.0
+    hdr_init_low_gain: 0.0
+    hdr_init_high_expo_t: 16000.0
+    hdr_init_high_gain: 0.0
+    hdr_g_func_filepath: /home/uni/Documents/_project/_ICRA2024/ros_ws/src/HDR_cam_attr_ctrl/param/coeff/gfunc_21137010.txt
+    hdr_resize_w: 128
+    hdr_resize_h: 96
+    hdr_expo_val_ratio_low: 0.25
+    hdr_expo_val_ratio_high: 4.0
+    hdr_ctrl_score_diff_ratio: 0.02
+    hdr_ctrl_expo_val_diff_ratio: 0.1
+    hdr_ctrl_expo_val_diff_abs: 1000.0
+    ss_n_seed: 20
+    ss_range_ratio: 5.0
+    ss_sigma_ratio: 0.3
+    ss_gap_expo_val_min: 1000.0
+    ss_gap_expo_val_max: 20000.0
+    gpr_hyper_c: 1.61
+    gpr_px_sample_res: 1000.0
+...

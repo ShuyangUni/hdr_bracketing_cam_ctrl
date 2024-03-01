@@ -2,7 +2,7 @@
  * @Author: Shuyang Zhang
  * @Date: 2024-02-29 17:04:28
  * @LastEditors: ShuyangUni shuyang.zhang1995@gmail.com
- * @LastEditTime: 2024-02-29 17:41:34
+ * @LastEditTime: 2024-03-01 16:25:42
  * @Description: 
  * 
  * Copyright (c) 2024 by Shuyang Zhang, All Rights Reserved. 
@@ -32,6 +32,7 @@ System Overview
 * [Spinnaker (2.7.0.128)](https://www.flir.com/products/spinnaker-sdk/)
 * OpenCV (installed with ROS)
 * Eigen (installed with ROS)
+* [YAML-CPP](https://github.com/jbeder/yaml-cpp)
 
 ## Getting Start
 

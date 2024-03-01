@@ -1,0 +1,19 @@
+---
+camera: 
+  -
+    ns: bfly
+    serial: 21137010
+    mode: shim
+    alias: cam0
+    sub_ns: cam0
+    publish_all_images: true
+    expo_t_major_lower: 1000.0 
+    expo_t_major_upper: 20000.0
+    gain_major_lower: 0.0
+    gain_major_upper: 20.0
+    expo_val_offset: 200.0
+    shim_k_p: 0.2
+    shim_alpha_pos: 0.5
+    shim_alpha_neg: 1.0
+    shim_sample_res: 0.05
+...

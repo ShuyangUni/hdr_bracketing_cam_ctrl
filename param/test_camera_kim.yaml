@@ -1,0 +1,27 @@
+---
+camera: 
+  -
+    ns: bfly
+    serial: 21137010
+    mode: kim
+    alias: cam0
+    sub_ns: cam0
+    publish_all_images: true
+    expo_t_major_lower: 2100.0 
+    expo_t_major_upper: 20000.0
+    gain_major_lower: 0.0
+    gain_major_upper: 20.0
+    expo_val_offset: 200.0
+    kim_seed_expo_t: 2000.0
+    kim_seed_gain: 0.0
+    kim_gp_hyper_c: 5.0
+    kim_gp_hyper_l: 10000.0
+    kim_gp_hyper_sn: 5.0
+    kim_gp_interval_expo_t: 1000.0
+    kim_gp_interval_gain: 1.0
+    kim_g_func_filepath: /home/nuc-0326/ros_ws/HDR_Cam_Attr_Ctrl/src/HDR_cam_attr_ctrl/param/coeff/gfunc_21137010.txt
+    kim_bo_max_iter: 5
+    kim_bo_alpha: 50
+    kim_img_resize_w: 94
+    kim_img_resize_h: 60
+...

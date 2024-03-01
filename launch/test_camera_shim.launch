@@ -1,0 +1,7 @@
+<launch>
+  <node pkg="hdr_attr_ctrl" 
+        type="acquisition" 
+        name="acquisition" 
+        output="screen" 
+        args="$(find hdr_attr_ctrl)/param/test_camera_shim.yaml"/>
+</launch>
