@@ -2,7 +2,7 @@
  * @Author: Shuyang Zhang
  * @Date: 2024-03-01 16:46:19
  * @LastEditors: ShuyangUni shuyang.zhang1995@gmail.com
- * @LastEditTime: 2024-03-01 19:16:01
+ * @LastEditTime: 2024-03-02 17:53:32
  * @Description: 
  * 
  * Copyright (c) 2024 by Shuyang Zhang, All Rights Reserved. 
@@ -27,7 +27,7 @@
     .
     .
 ```
-* **Camera**: camera list, this driver can use multiple cameras at the same time to run different methods. If we have 4 cameras to run different methods, we need to generate 4 camera instance with different method setup.
+* **Camera**: camera list, this driver can use multiple cameras at the same time to run different methods. If we have 4 cameras to run different methods, we need to generate 4 camera instances with different method setup.
 * **ns**: namespace, for ROS image output topic.
 * **sub_ns**: sub namespace, for ROS image output topic.
 * **alias**: camera name, for ROS image output topic.

@@ -2,7 +2,7 @@
  * @Author: Shuyang Zhang
  * @Date: 2024-02-29 17:04:28
  * @LastEditors: ShuyangUni shuyang.zhang1995@gmail.com
- * @LastEditTime: 2024-03-02 17:43:46
+ * @LastEditTime: 2024-03-02 18:49:25
  * @Description: 
  * 
  * Copyright (c) 2024 by Shuyang Zhang, All Rights Reserved. 
@@ -21,12 +21,12 @@ This paper will be officially released on IEEE International Conference on Robot
 * A camera attribute control method adapted to image bracketing patterns. Images with various exposures are captured for scene exploration, and optimal exposure for the next control is globally optimized by Gaussian process regression (GPR).
 * A VO-oriented image acquisition scheme that explores a wide dynamic range and provides stable image sequences in the time domain. The system leverages the exploration of the dynamic range with system output frequency according to the bracketing pattern design.
 
-## Reminders before Start
+## Basic Information
 * This work focus on the camera attribute control task. The attributes that we focus on include the **exposure time** and the **analog gain**.
 * Since this work needs an interaction with the camera device (to control the camera's attributes), we need a camera entity with **image bracketing interface**. We use the [FLIR BFS cameras](https://www.flir.com/products/blackfly-s-usb3/?vertical=machine%20vision&segment=iis) (FLIR BFS-U3-32S4C) and the bracketing images are captured by the Sequencer within the [Spinnaker API](https://www.flir.com/products/spinnaker-sdk/?vertical=machine+vision&segment=iis).
 * We implement our method alongside several baseline methods. For real-time usage, we package them as a ROS node which can be considered as a camera driver.
   * If you have a suitable FLIR BFS camera, you can follow the Getting Start to run this driver directly on your FLIR BFS device.
-  * If you have a suitable camera device with image bracketing interface but not FLIR with Spinnaker API, you can follow the guide to extract our method from the code and reimplement it on your own platforms.
+  * If you have a suitable camera device with image bracketing interface but not FLIR with Spinnaker API, you can follow [the guide](docs/code_structure.md) to extract our method from the code and reimplement it on your own platforms.
 
 ## Requirements
 ### Hardware
