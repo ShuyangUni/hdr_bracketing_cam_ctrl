@@ -2,7 +2,7 @@
  * @Author: Shuyang Zhang
  * @Date: 2024-02-29 17:04:28
  * @LastEditors: ShuyangUni shuyang.zhang1995@gmail.com
- * @LastEditTime: 2024-03-01 17:24:57
+ * @LastEditTime: 2024-03-01 18:04:12
  * @Description: 
  * 
  * Copyright (c) 2024 by Shuyang Zhang, All Rights Reserved. 
@@ -13,10 +13,9 @@ This is an official repository of
 
 **An Image Acquisition Scheme for Visual Odometry based on Image Bracketing and Online Attribute Control**, Shuyang Zhang, Jinhao He, Bohuan Xue, Jin Wu, Pengyu Yin, Jianhao Jiao and Ming Liu.
 
-This paper will be officially released on ICRA 2024.
+This paper will be officially released on IEEE International Conference on Robotics and Automation (ICRA) 2024.
 
 ![overview](docs/overview.png)
-System Overview
 
 ## Highlights
 * A camera attribute control method adapted to image bracketing patterns. Images with various exposures are captured for scene exploration, and optimal exposure for the next control is globally optimized by Gaussian process regression (GPR).
@@ -31,7 +30,7 @@ System Overview
 
 ## Requirements
 ### Hardware
-* Cameras with Image Bracketing Interface.
+* Cameras with Image Bracketing Interface (recommended [FLIR BFS cameras](https://www.flir.com/products/blackfly-s-usb3/?vertical=machine%20vision&segment=iis))
 
 ### Software
 * Ubuntu (20.04)
@@ -51,7 +50,7 @@ mkdir ${Workspace_PATH}\src
 4. Pull this repository with 3rdparty modules
 ```
 cd ${Workspace_PATH}\src
-# use --recursive to add 3rdparty modules
+# use '--recursive' to add 3rdparty modules
 git clone git@github.com:ShuyangUni/hdr_bracketing_cam_ctrl.git --recursive
 ```
 5. Compile this repository
@@ -66,3 +65,6 @@ source devel/setup.bash
 # change the launch file to your config file
 roslaunch hdr_attr_ctrl test_camera_auto.launch
 ```
+
+## Experiment Results
+

@@ -12,8 +12,10 @@ camera:
     gain_major_lower: 0.0
     gain_major_upper: 20.0
     expo_val_offset: 200.0
+    # the parameters defined in Shim2014IROS
     shim_k_p: 0.2
     shim_alpha_pos: 0.5
     shim_alpha_neg: 1.0
+    # image downsample for real-time implementations
     shim_sample_res: 0.05
 ...
