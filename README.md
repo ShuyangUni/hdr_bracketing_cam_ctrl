@@ -37,7 +37,7 @@ This paper will be officially released on IEEE International Conference on Robot
 * This work focus on the camera attribute control task. The attributes that we focus on include the **exposure time** and the **analog gain**.
 * Since this work needs an interaction with the camera device (to control the camera's attributes), we need a camera entity with **image bracketing interface**. We use the [FLIR BFS cameras](https://www.flir.com/products/blackfly-s-usb3/?vertical=machine%20vision&segment=iis) (FLIR BFS-U3-31S4C) and the bracketing images are captured by the Sequencer within the [Spinnaker API](https://www.flir.com/products/spinnaker-sdk/?vertical=machine+vision&segment=iis).
 * We implement our method alongside several baseline methods. For real-time usage, we package them as a ROS node which can be considered as a camera driver.
-  * If you have a suitable FLIR BFS camera, you can follow the Getting Start to run this driver directly on your FLIR BFS device.
+  * If you have a suitable FLIR BFS camera, you can follow the Getting Start to run this driver directly on your FLIR BFS devices.
   * If you have a suitable camera device with image bracketing interface but not FLIR with Spinnaker API, you can follow [the guide](docs/code_structure.md) to extract our method from the code and reimplement it on your own platforms.
 
 ## Requirements
@@ -71,8 +71,8 @@ cd ${Workspace_PATH}
 catkin_make
 ```
 6. Set YAML parameters following [this guide](docs/parameter_configuration.md)
-7. To run our method, the Camera Response Function (CRF) of the camera needs to be calibrated, please follow [this guide](docs/photometric_calibration.md)
-8. Run the code
+7. Calibrate the Camera Response Function (CRF), please follow [this guide](docs/photometric_calibration.md)
+8. Run the ROS node
 ```
 source devel/setup.bash
 # change the launch file to your config file
@@ -107,3 +107,15 @@ roslaunch hdr_attr_ctrl test_camera_auto.launch
 <p align="center">
   <img src="docs/imgs/static_illumination.svg" width = "50%" alt="static_illumination">
 </p>
+
+## Citation
+If you find this project useful, please cite our paper
+```
+@inproceedings{zhang2024image,
+  title={An image acquisition scheme for visual odometry based on image bracketing and online attribute control},
+  author={Zhang, Shuyang and He, Jinhao and Xue, Bohuan and Wu, Jin and Yin, Pengyu and Jiao, Jianhao and Liu, Ming},
+  booktitle={2024 IEEE International conference on robotics and automation (ICRA)},
+  year={2024},
+  organization={IEEE}
+}
+```
