@@ -2,7 +2,7 @@
  * @Author: Shuyang Zhang
  * @Date: 2024-02-29 17:04:28
  * @LastEditors: ShuyangUni shuyang.zhang1995@gmail.com
- * @LastEditTime: 2024-03-01 18:04:12
+ * @LastEditTime: 2024-03-02 17:43:46
  * @Description: 
  * 
  * Copyright (c) 2024 by Shuyang Zhang, All Rights Reserved. 
@@ -58,8 +58,9 @@ git clone git@github.com:ShuyangUni/hdr_bracketing_cam_ctrl.git --recursive
 cd ${Workspace_PATH}
 catkin_make
 ```
-6. Set YAML parameters following this guide
-7. Run the code
+6. Set YAML parameters following [this guide](docs/parameter_configuration.md)
+7. To run our method, the Camera Response Function (CRF) of the camera needs to be calibrated, please follow [this guide](docs/photometric_calibration.md)
+8. Run the code
 ```
 source devel/setup.bash
 # change the launch file to your config file
